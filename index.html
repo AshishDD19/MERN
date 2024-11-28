@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Exam Result Website
+        </title>
+    </head>
+    <body>
+        <h1>Exam result</h1>
+        <form onsubmit="handleSubmit(event)">    
+            <label for="roll-no">Enter your roll no. : </label>
+            <input type="text" id="roll-no"/><br/>
+            <input type="submit"/>
+        </form>
+        <script>
+            function handleSubmit(event){
+                console.log(event)
+                event.preventDefault()//prevents webpage to reload
+                const rollNo = event.target[0].value
+                console.log('roll no is '+ rollNo)
+                
+                // xhr object
+                // XMLHttpRequest 
+                const xhr = new XMLHttpRequest()
+                // HTTP Verb - GET (Read), POST(Create), PUT (Update), DELETE (Destroy)
+
+                xhr.open('GET',`https://result—server.onrender.com/api/results/${rollNo}`)
+                xhr.send()
+
+                // onload method gets called once we receive response from the server
+                xhr.onload = function(){
+                    // the response from the server is inside responseText
+                    console.log(xhr.responseText)
+                }
+            }
+
+        </script>
+    </body>
+</html>

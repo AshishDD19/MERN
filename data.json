@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "usn": "A12345",
+        "name": "Alice",
+        "grade": "A",
+        "result": "Pass"
+    },
+    {
+        "id": 2,
+        "usn": "B67890",
+        "name": "Bob",
+        "grade": "B",
+        "result": "Pass"
+    },
+    {
+        "id": 3,
+        "usn": "C54321",
+        "name": "Carol",
+        "grade": "C",
+        "result": "Pass"
+    },
+    {
+        "id": 4,
+        "usn": "D98765",
+        "name": "David",
+        "grade": "B",
+        "result": "Pass"
+    },
+    {
+        "id": 5,
+        "usn": "E23456",
+        "name": "Eve",
+        "grade": "A",
+        "result": "Pass"
+    }
+]
